@@ -1,11 +1,11 @@
 [
   {
-    "title": "",
-    "slug": "p3",
-    "giturl": "",
-    "deployurl": "",
-    "image": "",
-    "description": "",
+    "title": "p1",
+    "slug": "p1",
+    "giturl": "p1",
+    "deployurl": "p1",
+    "image": "./images/project2.jpg",
+    "description": "p1",
     "tags": ["React", "Gatsby", "JavaScript"]
   }
 ]
