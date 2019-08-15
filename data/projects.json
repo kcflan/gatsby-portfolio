@@ -1,9 +1,9 @@
 [
   {
-    "title": "",
+    "title": "Please View my Github while this site is finishing.",
     "slug": "proj1",
-    "giturl": "",
-    "deployurl": "",
+    "giturl": "https://github.com/kflan-io",
+    "deployurl": "https://github.com/kflan-io",
     "image": "./images/project2.jpg",
     "description": "",
     "tags": ["React", "Gatsby", "JavaScript"]
