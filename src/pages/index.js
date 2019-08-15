@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
         imageData={project.image.childImageSharp.fluid}
       />
     ))}
-    <Link to="/page-2/">Go to page 2</Link>
+    
   </Layout>
 )
 
