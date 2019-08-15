@@ -1,29 +1,11 @@
 [
   {
-    "title": "Project One",
-    "slug": "project-1",
-    "gitUrl": "https://example.com",
-    "deployUrl": "https://example.com",
-    "image": "./images/project1.jpg",
-    "description": "I built this.",
-    "tags": ["HTML5", "JavaScript"]
-  },
-  {
-    "title": "Project Two",
-    "slug": "project-2",
-    "giturl": "https://example.com",
-    "deployurl": "https://example.com",
-    "image": "./images/project2.jpg",
-    "description": "I built this.",
-    "tags": ["React", "JavaScript"]
-  },
-  {
-    "title": "Project Three",
-    "slug": "project-3",
-    "giturl": "https://example.com",
-    "deployurl": "https://example.com",
-    "image": "./images/project2.jpg",
-    "description": "I built this site to show off my sweet skills!",
+    "title": "",
+    "slug": "p3",
+    "giturl": "",
+    "deployurl": "",
+    "image": "",
+    "description": "",
     "tags": ["React", "Gatsby", "JavaScript"]
   }
 ]
