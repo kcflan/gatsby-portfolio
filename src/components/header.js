@@ -139,7 +139,8 @@ export default function Header({ siteTitle, scrollToContent }, ...props) {
       </div>
     </Menu>
   );
-  let locationIsHome = window.location.pathname === '/';
+  let locationIsHome =
+    typeof window !== 'undefined' && window.location.pathname === '/';
 
   return (
     <div className={(classes.grow, classes.navbar)}>
