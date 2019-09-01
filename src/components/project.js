@@ -45,13 +45,13 @@ const Project = ({
         </ul>
         <CardActions>
           <Button size="small" color="primary">
-            <a href={giturl} style={viewStyle}>
+            <a href={giturl} target="_blank" style={viewStyle}>
               View this project on github &rarr;
             </a>
           </Button>
 
           <Button size="small" color="primary">
-            <a href={deployurl} style={viewStyle}>
+            <a href={deployurl} target="_blank" style={viewStyle}>
               View this project online &rarr;
             </a>
           </Button>
