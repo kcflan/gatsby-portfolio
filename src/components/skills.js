@@ -65,10 +65,11 @@ const Skills = React.forwardRef((props, ref) => {
                 <p>&nbsp;</p>
                 <p>
                   I use the MVC software architecture design pattern, and I have
-                  a pssion for problem solving. I love to learn new technologies
-                  to build the best product possible. I'm a recent graduate from
-                  the University of Arizona Coding Bootcamp, where I worked on
-                  several team projects to build real world applications.
+                  a passion for problem solving. I love to learn new
+                  technologies and build the best product possible. I'm a recent
+                  graduate from the University of Arizona Coding Bootcamp, where
+                  I worked on several team projects to build real world
+                  applications.
                 </p>
               </Typography>
             </div>
