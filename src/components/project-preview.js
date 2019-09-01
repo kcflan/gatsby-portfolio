@@ -39,7 +39,15 @@ const ProjectPreview = ({ title, description, slug, imageData }) => (
             <CardContent>
               <CardActionArea>
                 <Link to={`/${slug}/`}>
-                  <Image fluid={imageData} alt={title} />
+                  <Image
+                    fluid={imageData}
+                    alt={title}
+                    style={{
+                      '&:hover': {
+                        transform: 'scale(1.1)'
+                      }
+                    }}
+                  />
                 </Link>
               </CardActionArea>
               <h2>

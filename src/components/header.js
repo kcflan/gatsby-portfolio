@@ -120,15 +120,11 @@ export default function Header({ siteTitle, scrollToContent }, ...props) {
           <IconButton aria-label="new recipe search" color="inherit">
             <AccountCircle />
           </IconButton>
-          <Link to={'/search/'} className="btn btn-link text-primary">
-            <span className="text-primary">New Search</span>
-          </Link>
+          {/* <Link to={'/search/'} className="btn btn-link text-primary"> */}
+          <span className="text-primary">View Resume</span>
+          {/* </Link> */}
         </MenuItem>
-        <MenuItem onClick={handleMobileMenuClose}>
-          <Link to={'/api/recipes'} className="btn btn-link text-primary">
-            <span className="text-primary">Saved Recipes</span>
-          </Link>
-        </MenuItem>
+
         <MenuItem onClick={handleMobileMenuOpen}>
           <IconButton
             aria-label="account of current user"
@@ -138,7 +134,7 @@ export default function Header({ siteTitle, scrollToContent }, ...props) {
           >
             <AccountCircle />
           </IconButton>
-          <span className="btn btn-link text-primary">Profile</span>
+          <span className="btn btn-link text-primary">Contact Me</span>
         </MenuItem>
       </div>
     </Menu>
