@@ -1,29 +1,62 @@
 [
   {
-    "title": "Project One",
-    "slug": "project-1",
-    "gitUrl": "https://example.com",
-    "deployUrl": "https://example.com",
-    "image": "./images/project1.jpg",
-    "description": "I built this.",
-    "tags": ["HTML5", "JavaScript"]
+    "title": "Pantry Chef",
+    "slug": "pantry-chef",
+    "giturl": "https://github.com/kflan-io/group-project-3",
+    "deployurl": "http://pantrychef.us",
+    "image": "./images/pantrychef.png",
+    "description": "A Full-Stack App in React that outputs recipes based on a logged in user's ingredients.",
+    "details": "A Full-Stack App in React that outputs recipes based on a logged in user's ingredients.",
+    "tags": ["MERN Stack", "React", "JavaScript", "Express", "MongoDB"]
   },
   {
-    "title": "Project Two",
-    "slug": "project-2",
-    "giturl": "https://example.com",
-    "deployurl": "https://example.com",
-    "image": "./images/project2.jpg",
-    "description": "I built this.",
-    "tags": ["React", "JavaScript"]
+    "title": "Loma Linda Neighborhood",
+    "slug": "loma-linda",
+    "giturl": "https://github.com/kflan-io/",
+    "deployurl": "http://ll-na.com",
+    "image": "./images/lomalinda.png",
+    "description": "A community site for the Loma Linda Neighborhood Association.",
+    "details": "",
+    "tags": ["HTML5", "Bootstrap", "JavaScript", "CSS"]
   },
   {
-    "title": "Project Three",
+    "title": "React Memory Game",
+    "slug": "clicks-mcgee",
+    "giturl": "https://github.com/kflan-io/clicksmcgee",
+    "deployurl": "https://kflan-io.github.io/clicksmcgee/",
+    "image": "./images/mcgee.png",
+    "description": "A memory game built with React.js.",
+    "details": "",
+    "tags": ["React", "JavaScript", "CSS"]
+  },
+  {
+    "title": "React Reading List",
+    "slug": "readin-list",
+    "giturl": "https://github.com/kflan-io/readin-list",
+    "deployurl": "https://immense-oasis-64669.herokuapp.com/",
+    "image": "./images/readinlist.png",
+    "description": "Simple React App saving data with MongoDB.",
+    "details": "",
+    "tags": ["React", "MongoDB", "JavaScript"]
+  },
+  {
+    "title": "Giphstar",
+    "slug": "giphstar",
+    "giturl": "https://github.com/kflan-io/Giphstar",
+    "deployurl": "https://kflan-io.github.io/Giphstar/",
+    "image": "./images/giphstar.png",
+    "description": "Consuming API endpoints with Giphy.",
+    "details": "",
+    "tags": ["JavaScript", "jQuery", "HTML5"]
+  },
+  {
+    "title": "Star Wars",
     "slug": "project-3",
-    "giturl": "https://example.com",
-    "deployurl": "https://example.com",
-    "image": "./images/project2.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "giturl": "https://github.com/kflan-io/Star-Wars-RPG",
+    "deployurl": "https://kflan-io.github.io/Star-Wars-RPG/",
+    "image": "./images/starwars.png",
+    "description": "Star Wars is a game built in javascript utilizing jQuery.",
+    "details": "",
+    "tags": ["JavaScript", "jQuery", "Bootstrap", "HTML5"]
   }
 ]

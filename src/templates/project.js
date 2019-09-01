@@ -1,13 +1,14 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Project from "../components/project"
+import React from 'react';
+import { graphql } from 'gatsby';
+import ProjectLayout from '../components/projectlayout';
+import Project from '../components/project';
 
 export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
       description
+      details
       giturl
       deployurl
       tags
@@ -20,19 +21,20 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 const ProjectTemplate = ({ data: { projectsJson: project } }) => (
-  <Layout>
+  <ProjectLayout>
     <Project
       title={project.title}
       imageData={project.image.childImageSharp.fluid}
       description={project.description}
+      details={project.details}
       tags={project.tags}
       giturl={project.giturl}
       deployurl={project.deployurl}
     />
-  </Layout>
-)
+  </ProjectLayout>
+);
 
-export default ProjectTemplate
+export default ProjectTemplate;

@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import ProjectPreview from "../components/project-preview"
-import { graphql } from "gatsby"
+import Layout from '../components/layout';
+import Image from '../components/image';
+import SEO from '../components/seo';
+import ProjectPreview from '../components/project-preview';
+import { graphql } from 'gatsby';
 
 export const query = graphql`
   {
@@ -14,6 +14,7 @@ export const query = graphql`
         node {
           title
           description
+          details
           slug
           image {
             childImageSharp {
@@ -26,7 +27,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -36,12 +37,12 @@ const IndexPage = ({ data }) => (
         key={`preview-${project.slug}`}
         title={project.title}
         description={project.description}
+        details={project.details}
         slug={project.slug}
         imageData={project.image.childImageSharp.fluid}
       />
     ))}
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
