@@ -5,19 +5,19 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
-import { makeStyles } from '@material-ui/core/styles';
-import { useScrollTrigger, Slide, Grid, Typography } from '@material-ui/core/';
+import React, { useEffect, useRef, createRef } from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import { makeStyles } from "@material-ui/core/styles";
+import { useScrollTrigger, Slide, Grid, Typography } from "@material-ui/core/";
 // import Card from '@material-ui/core/Card';
 // import CardContent from '@material-ui/core/CardContent';
-import Header from './header';
-import Skills from './skills';
+import Header from "./header";
+import Skills from "./skills";
 // import Hero from './hero';
-import ParallaxFrame from './parallax';
+import ParallaxFrame from "./parallax";
 
-import './layout.css';
+import "./layout.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,55 +31,62 @@ const Layout = ({ children }) => {
   `);
   const useStyles = makeStyles(theme => ({
     root: {
-      flexGrow: 1
+      flexGrow: 1,
     },
     card: {
-      marginTop: '1rem'
+      marginTop: "1rem",
     },
     h4: {
-      color: '#296792',
+      color: "#296792",
       marginBottom: theme.spacing(4),
       paddingTop: theme.spacing(2),
-      [theme.breakpoints.up('sm')]: {
-        paddingTop: theme.spacing(1)
-      }
-    }
+      [theme.breakpoints.up("sm")]: {
+        paddingTop: theme.spacing(1),
+      },
+    },
   }));
   function HideOnScroll(props) {
     const { children } = props;
     const trigger = useScrollTrigger();
 
     return (
-      <Slide appear={false} direction="down" in={!trigger}>
+      <Slide appear={false} direction='down' in={!trigger}>
         {children}
       </Slide>
     );
   }
-  const section1 = React.createRef();
-  const section2 = React.createRef();
-  const section3 = React.createRef();
-  const section4 = React.createRef();
+  const section1 = createRef();
+  const section2 = createRef();
+  const section3 = createRef();
+  const section4 = createRef();
 
   const classes = useStyles();
 
   const scrollToContent = content => {
     switch (content) {
-      case 'section1':
-        section1.current.scrollIntoView({
-          block: 'start',
-          behavior: 'smooth'
-        });
-
+      case "section1":
+        focusDOM(section1);
         break;
-      case 'section2':
-        section2.current.scrollIntoView({ behavior: 'smooth' });
-      case 'section3':
-        section3.current.scrollIntoView({ behavior: 'smooth' });
-      case 'section4':
-        section4.current.scrollIntoView({ behavior: 'smooth' });
+      case "section2":
+        focusDOM(section2);
+        break;
+      case "section3":
+        focusDOM(section3);
+        break;
+      case "section4":
+        focusDOM(section4);
+        break;
       default:
-        section1.current.scrollIntoView({ behavior: 'smooth' });
+        focusDOM(section1);
     }
+  };
+  const focusDOM = refPoint => {
+    refPoint.current.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
+    // section1.current.scrollIntoView({ behavior: "smooth" });
+    // window.scrollTo(0, refPoint.current.offsetTop);
   };
 
   return (
@@ -106,7 +113,7 @@ const Layout = ({ children }) => {
           <Grid item xs={12}>
             <Skills ref={section2} />
           </Grid>
-          <div ref={section3}></div>
+          {/* <div ref={section3}></div> */}
           <Grid item xs={12}>
             <div
               ref={section3}
@@ -114,13 +121,13 @@ const Layout = ({ children }) => {
                 margin: `50px auto 0 auto`,
                 // maxWidth: 800,
                 padding: `0px 1.0875rem 1.45rem`,
-                paddingTop: 0
+                paddingTop: 0,
               }}
             >
               <Typography
-                color="inherit"
-                align="center"
-                variant="h4"
+                color='inherit'
+                align='center'
+                variant='h4'
                 className={classes.h4}
               >
                 Projects...
@@ -133,7 +140,7 @@ const Layout = ({ children }) => {
             <footer>
               © {new Date().getFullYear()}, kflan.io
               <div ref={section4}>
-                <a href="mailto:kevin@kflan.io">Contact Me</a>
+                <a href='mailto:kevin@kflan.io'>Contact Me</a>
               </div>
             </footer>
           </Grid>
@@ -144,7 +151,7 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
