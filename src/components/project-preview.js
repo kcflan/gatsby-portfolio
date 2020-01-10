@@ -1,41 +1,47 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Image from 'gatsby-image';
+import React from "react";
+import { Link } from "gatsby";
+import Image from "gatsby-image";
 import {
   Grid,
   Button,
   Card,
   CardContent,
   CardActionArea,
-  CardActions
-} from '@material-ui/core';
+  CardActions,
+} from "@material-ui/core";
 const viewStyle = {
-  color: 'white',
+  color: "white",
   textDecoration: `none`,
   minWidth: `100px`,
-  marginRight: '1rem',
-  padding: '0.5rem',
+  marginRight: "1rem",
+  padding: "0.5rem",
   marginLeft: 0,
   borderRadius: 6,
-  backgroundColor: '#296792'
+  backgroundColor: "#296792",
 };
 const ProjectPreview = ({ title, description, slug, imageData }) => (
   <Card>
     <CardContent>
       <div
-        className="project-preview"
+        className='project-preview'
         style={{
-          flexFlow: 'row wrap',
-          display: 'flex',
-          padding: '20px',
-          justifyContent: 'space-around',
-          alignContent: 'flex-start',
-          overflow: 'auto',
-          margin: '0 auto'
+          flexFlow: "row nowrap",
+          // padding: "20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-around",
+          // justifyContent: "center",
+          alignContent: "center",
+          // overflow: "auto",
+          margin: ".5em auto",
         }}
       >
-        <Grid item xs={4}>
-          <Card>
+        <Grid item xs={5}>
+          <Card
+            style={{
+              minWidth: "250px",
+            }}
+          >
             <CardContent>
               <CardActionArea>
                 <Link to={`/${slug}/`}>
@@ -43,9 +49,9 @@ const ProjectPreview = ({ title, description, slug, imageData }) => (
                     fluid={imageData}
                     alt={title}
                     style={{
-                      '&:hover': {
-                        transform: 'scale(1.1)'
-                      }
+                      "&:hover": {
+                        transform: "scale(1.1)",
+                      },
                     }}
                   />
                 </Link>
@@ -57,7 +63,7 @@ const ProjectPreview = ({ title, description, slug, imageData }) => (
             </CardContent>
             <CardActions>
               <Link to={`/${slug}/`} style={{ textDecoration: `none` }}>
-                <Button size="small" color="primary" style={viewStyle}>
+                <Button size='small' color='primary' style={viewStyle}>
                   View this project &rarr;
                 </Button>
               </Link>
