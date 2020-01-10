@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core/';
-import Header from './header';
+import React, { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import { makeStyles } from "@material-ui/core/styles";
+import { Grid } from "@material-ui/core/";
+import Header from "./header";
 
-import './layout.css';
+import "./layout.css";
 
 const ProjectLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,8 +26,8 @@ const ProjectLayout = ({ children }) => {
   `);
   const useStyles = makeStyles(theme => ({
     root: {
-      flexGrow: 1
-    }
+      flexGrow: 1,
+    },
   }));
 
   const section1 = React.createRef();
@@ -36,10 +36,10 @@ const ProjectLayout = ({ children }) => {
 
   const scrollToContent = content => {
     switch (content) {
-      case 'section1':
+      case "section1":
         section1.current.scrollIntoView({
-          block: 'start',
-          behavior: 'smooth'
+          block: "start",
+          behavior: "smooth",
         });
 
         break;
@@ -62,7 +62,7 @@ const ProjectLayout = ({ children }) => {
                 margin: `50px auto 0 auto`,
                 maxWidth: 960,
                 padding: `0px 1.0875rem 1.45rem`,
-                paddingTop: 0
+                paddingTop: 0,
               }}
             >
               <main>{children}</main>
@@ -72,7 +72,7 @@ const ProjectLayout = ({ children }) => {
             <footer>
               © {new Date().getFullYear()}, kflan.io
               <div>
-                <a href="mailto:kevin@kflan.io">Contact Me</a>
+                <a href='mailto:kevin@kflan.io'>Contact Me</a>
               </div>
             </footer>
           </Grid>
@@ -83,7 +83,7 @@ const ProjectLayout = ({ children }) => {
 };
 
 ProjectLayout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default ProjectLayout;

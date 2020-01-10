@@ -5,13 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect, useRef, createRef } from "react";
+import React, { createRef } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import { makeStyles } from "@material-ui/core/styles";
 import { useScrollTrigger, Slide, Grid, Typography } from "@material-ui/core/";
 // import Card from '@material-ui/core/Card';
-// import CardContent from '@material-ui/core/CardContent';
+import ContactForm from "./contactform";
 import Header from "./header";
 import Skills from "./skills";
 // import Hero from './hero';
@@ -138,10 +138,19 @@ const Layout = ({ children }) => {
           </Grid>
           <Grid item xs={12}>
             <footer>
-              © {new Date().getFullYear()}, kflan.io
+              <Typography
+                color='inherit'
+                align='center'
+                variant='h4'
+                className={classes.h4}
+              >
+                Contact...
+              </Typography>
               <div ref={section4}>
-                <a href='mailto:kevin@kflan.io'>Contact Me</a>
+                {/* <a href='mailto:kevin@kflan.io'>Contact Me</a> */}
+                <ContactForm />
               </div>
+              © {new Date().getFullYear()}, kflan.io
             </footer>
           </Grid>
         </Grid>
