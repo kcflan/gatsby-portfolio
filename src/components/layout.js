@@ -44,6 +44,25 @@ const Layout = ({ children }) => {
         paddingTop: theme.spacing(1),
       },
     },
+    resumeLink: {
+      textDecoration: "none",
+      "&:visited": {
+        textDecoration: "none",
+      },
+      "&:focus": {
+        textDecoration: "none",
+      },
+      "&:hover": {
+        color: "#296792",
+        textDecoration: "none",
+      },
+      "&:link": {
+        textDecoration: "none",
+      },
+      "&:active": {
+        textDecoration: "none",
+      },
+    },
   }));
   function HideOnScroll(props) {
     const { children } = props;
@@ -150,7 +169,14 @@ const Layout = ({ children }) => {
                 {/* <a href='mailto:kevin@kflan.io'>Contact Me</a> */}
                 <ContactForm />
               </div>
-              © {new Date().getFullYear()}, kflan.io
+              © {new Date().getFullYear()},{" "}
+              <a
+                className={classes.resumeLink}
+                href='https://docs.google.com/document/d/1Z2xpGEduDK0V6xw8kqPNM-3SyACJxJKeLA3Y_AunPxM/edit?usp=sharing'
+                target='_blank'
+              >
+                <span>kflan.io</span>
+              </a>
             </footer>
           </Grid>
         </Grid>

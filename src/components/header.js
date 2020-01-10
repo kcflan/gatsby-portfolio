@@ -16,6 +16,7 @@ import {
 } from "@material-ui/core/";
 
 import MenuIcon from "@material-ui/icons/Menu";
+import { nominalTypeHack } from "prop-types";
 // import { StaticQuery, graphql } from "gatsby"
 // import Img from "gatsby-image"
 
@@ -85,6 +86,25 @@ const useStyles = makeStyles(theme => ({
       display: "none",
     },
   },
+  noLink: {
+    textDecoration: "none",
+    color: "#000",
+    "&:visited": {
+      textDecoration: "none",
+    },
+    "&:focus": {
+      textDecoration: "none",
+    },
+    "&:hover": {
+      textDecoration: "none",
+    },
+    "&:link": {
+      textDecoration: "none",
+    },
+    "&:active": {
+      textDecoration: "none",
+    },
+  },
 }));
 
 export default function Header({ siteTitle, scrollToContent }, ...props) {
@@ -120,12 +140,16 @@ export default function Header({ siteTitle, scrollToContent }, ...props) {
           <IconButton aria-label='new recipe search' color='inherit'>
             <AccountCircle />
           </IconButton>
-          {/* <Link to={'/search/'} className="btn btn-link text-primary"> */}
-          <span className='text-primary'>View Resume</span>
-          {/* </Link> */}
+          <a
+            className={classes.noLink}
+            href='https://docs.google.com/document/d/1Z2xpGEduDK0V6xw8kqPNM-3SyACJxJKeLA3Y_AunPxM/edit?usp=sharing'
+            target='_blank'
+          >
+            <span className='text-primary'>View Resume</span>
+          </a>
         </MenuItem>
 
-        <MenuItem onClick={handleMobileMenuOpen}>
+        {/* <MenuItem onClick={handleMobileMenuOpen}>
           <IconButton
             aria-label='account of current user'
             aria-controls='primary-search-account-menu'
@@ -135,7 +159,7 @@ export default function Header({ siteTitle, scrollToContent }, ...props) {
             <AccountCircle />
           </IconButton>
           <span className='btn btn-link text-primary'>Contact Me</span>
-        </MenuItem>
+        </MenuItem> */}
       </div>
     </Menu>
   );

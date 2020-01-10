@@ -28,6 +28,25 @@ const ProjectLayout = ({ children }) => {
     root: {
       flexGrow: 1,
     },
+    resumeLink: {
+      textDecoration: "none",
+      "&:visited": {
+        textDecoration: "none",
+      },
+      "&:focus": {
+        textDecoration: "none",
+      },
+      "&:hover": {
+        color: "#296792",
+        textDecoration: "none",
+      },
+      "&:link": {
+        textDecoration: "none",
+      },
+      "&:active": {
+        textDecoration: "none",
+      },
+    },
   }));
 
   const section1 = React.createRef();
@@ -70,10 +89,14 @@ const ProjectLayout = ({ children }) => {
           </Grid>
           <Grid item xs={12}>
             <footer>
-              © {new Date().getFullYear()}, kflan.io
-              <div>
-                <a href='mailto:kevin@kflan.io'>Contact Me</a>
-              </div>
+              © {new Date().getFullYear()},{" "}
+              <a
+                className={classes.resumeLink}
+                href='https://docs.google.com/document/d/1Z2xpGEduDK0V6xw8kqPNM-3SyACJxJKeLA3Y_AunPxM/edit?usp=sharing'
+                target='_blank'
+              >
+                <span>kflan.io</span>
+              </a>
             </footer>
           </Grid>
         </Grid>
