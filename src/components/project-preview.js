@@ -36,7 +36,7 @@ const ProjectPreview = ({ title, description, slug, imageData }) => (
           margin: ".5em auto",
         }}
       >
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <Card
             style={{
               minWidth: "250px",
