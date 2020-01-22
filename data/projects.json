@@ -1,5 +1,23 @@
 [
   {
+    "title": "Cloud Copy 'n Paste",
+    "slug": "cloudcnp",
+    "giturl": "https://github.com/kflan-io/",
+    "deployurl": "http://cloudcnp.com",
+    "image": "./images/cloudcnp-header.png",
+    "description": "A Full-Stack App, Client in React and Next.js, Server in Node with Apollo GraphQL.",
+    "details": "Cloud based Copy and Paste app that allows user to create a URL with pasted text & open said URL on another device to retrieve the text.",
+    "tags": [
+      "MERN Stack",
+      "React",
+      "Next.js",
+      "GraphQL",
+      "JavaScript",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
     "title": "Pantry Chef",
     "slug": "pantry-chef",
     "giturl": "https://github.com/kflan-io/group-project-3",
