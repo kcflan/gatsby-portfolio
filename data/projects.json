@@ -20,7 +20,7 @@
   {
     "title": "Pantry Chef",
     "slug": "pantry-chef",
-    "giturl": "https://github.com/kflan-io/group-project-3",
+    "giturl": "https://github.com/kflan-io/pantrychef",
     "deployurl": "http://pantrychef.us",
     "image": "./images/pantrychef.png",
     "description": "A Full-Stack App in React that outputs recipes based on a logged in user's ingredients.",
