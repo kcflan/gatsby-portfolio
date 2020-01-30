@@ -56,7 +56,7 @@ const Skills = React.forwardRef((props, ref) => {
                 className={classes.p}
               >
                 <p>
-                  Hi, I'm Kevin; I am a full-stack web developer with a vast
+                  Hi, I'm Kevin. I am a full-stack web developer with a vast
                   array of knowledge in many frontend frameworks, databases, and
                   best code practices. My primary focus is JavaScript heavy in
                   the React Library and Vue.js Framework for building user
@@ -66,12 +66,11 @@ const Skills = React.forwardRef((props, ref) => {
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                  I use the MVC software architecture design pattern, and I have
-                  a passion for problem solving. I love to learn new
-                  technologies and build the best product possible. I'm a
-                  graduate from the University of Arizona Coding Bootcamp, where
-                  I worked on several team projects to build real world
-                  applications.
+                  Writing code makes me happy. I crave learning and gravitate
+                  towards development because it allows me to constantly learn
+                  new things. One of my greatest strengths is my aptitude for
+                  figuring things out. I love to overcome obstacles and solve
+                  problems. I look forward to the challenges to come...
                 </p>
               </Typography>
             </div>
