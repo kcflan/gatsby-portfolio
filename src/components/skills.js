@@ -39,7 +39,7 @@ const Skills = React.forwardRef((props, ref) => {
       <CardContent>
         <div className={classes.background} ref={ref}>
           {/* <div style={{ border: '1px solid green', padding: '0 6rem' }}> */}
-          <div style={{ padding: "0 6rem", marginTop: "1em" }}>
+          <div style={{ padding: "0 1rem", marginTop: "1em" }}>
             <Typography
               color='inherit'
               align='center'
