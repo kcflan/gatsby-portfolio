@@ -19,23 +19,19 @@ const viewStyle = {
   borderRadius: 6,
   backgroundColor: "#296792",
 };
+const projectStyle = {
+  flexFlow: "row nowrap",
+  display: "flex",
+  // justifyContent: "space-between",
+  // justifyContent: "space-around",
+  justifyContent: "center",
+  alignContent: "center",
+  margin: ".5em auto",
+};
 const ProjectPreview = ({ title, description, slug, imageData }) => (
   <Card>
     <CardContent>
-      <div
-        className='project-preview'
-        style={{
-          flexFlow: "row nowrap",
-          // padding: "20px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-around",
-          // justifyContent: "center",
-          alignContent: "center",
-          // overflow: "auto",
-          margin: ".5em auto",
-        }}
-      >
+      <div className='project-preview' style={projectStyle}>
         <Grid item xs={5}>
           <Card
             style={{
