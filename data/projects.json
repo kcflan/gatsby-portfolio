@@ -5,7 +5,7 @@
     "giturl": "https://github.com/kflan-io/",
     "deployurl": "http://cloudcnp.com",
     "image": "./images/cloudcnp-header.png",
-    "description": "A Full-Stack App, Client in React and Next.js, Server in Node with Apollo GraphQL.",
+    "description": "A Full-Stack App, Deployed Client in React and Next.js, Deployed Apollo GraphQL Server in Node.js.",
     "details": "Cloud based Copy and Paste app that allows user to create a URL with pasted text & open said URL on another device to retrieve the text.",
     "tags": [
       "MERN Stack",
@@ -13,6 +13,7 @@
       "Next.js",
       "GraphQL",
       "JavaScript",
+      "TypeScript",
       "Node.js",
       "MongoDB"
     ]
