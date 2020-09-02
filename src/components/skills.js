@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   card: {
-    marginTop: "1rem",
+    marginTop: "2rem",
   },
 }));
 
