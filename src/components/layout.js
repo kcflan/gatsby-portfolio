@@ -170,13 +170,13 @@ const Layout = ({ children }) => {
                 <ContactForm />
               </div>
               © {new Date().getFullYear()},{" "}
-              <a
+              {/* <a
                 className={classes.resumeLink}
                 href='https://docs.google.com/document/d/1Z2xpGEduDK0V6xw8kqPNM-3SyACJxJKeLA3Y_AunPxM/edit?usp=sharing'
                 target='_blank'
-              >
-                <span>kflan.io</span>
-              </a>
+              > */}
+              <span>kflan.io</span>
+              {/* </a> */}
             </footer>
           </Grid>
         </Grid>
