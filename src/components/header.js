@@ -136,8 +136,8 @@ export default function Header({ siteTitle, scrollToContent }, ...props) {
       onClose={handleMobileMenuClose}
     >
       <div>
-        <MenuItem onClick={handleMobileMenuClose}>
-          <IconButton aria-label='new recipe search' color='inherit'>
+        {/* <MenuItem onClick={handleMobileMenuClose}>
+          <IconButton aria-label='search' color='inherit'>
             <AccountCircle />
           </IconButton>
           <a
@@ -147,7 +147,7 @@ export default function Header({ siteTitle, scrollToContent }, ...props) {
           >
             <span className='text-primary'>View Resume</span>
           </a>
-        </MenuItem>
+        </MenuItem> */}
 
         {/* <MenuItem onClick={handleMobileMenuOpen}>
           <IconButton
