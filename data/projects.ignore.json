@@ -39,4 +39,44 @@
 		"details": "",
 		"tags": ["HTML5", "Bootstrap", "JavaScript", "CSS"]
 	}
+	// {
+	// 	"title": "React Memory Game",
+	// 	"slug": "clicks-mcgee",
+	// 	"giturl": "https://github.com/kflan-io/clicksmcgee",
+	// 	"deployurl": "https://kflan-io.github.io/clicksmcgee/",
+	// 	"image": "./images/mcgee.png",
+	// 	"description": "A memory game built with React.js.",
+	// 	"details": "",
+	// 	"tags": ["React", "JavaScript", "CSS"]
+	// },
+	// {
+	// 	"title": "React Reading List",
+	// 	"slug": "readin-list",
+	// 	"giturl": "https://github.com/kflan-io/readin-list",
+	// 	"deployurl": "https://immense-oasis-64669.herokuapp.com/",
+	// 	"image": "./images/readinlist.png",
+	// 	"description": "Simple React App saving data with MongoDB.",
+	// 	"details": "",
+	// 	"tags": ["React", "MongoDB", "JavaScript"]
+	// },
+	// {
+	// 	"title": "Giphstar",
+	// 	"slug": "giphstar",
+	// 	"giturl": "https://github.com/kflan-io/Giphstar",
+	// 	"deployurl": "https://kflan-io.github.io/Giphstar/",
+	// 	"image": "./images/giphstar.png",
+	// 	"description": "Consuming API endpoints with Giphy.",
+	// 	"details": "",
+	// 	"tags": ["JavaScript", "jQuery", "HTML5"]
+	// },
+	// {
+	// 	"title": "Star Wars",
+	// 	"slug": "project-3",
+	// 	"giturl": "https://github.com/kflan-io/Star-Wars-RPG",
+	// 	"deployurl": "https://kflan-io.github.io/Star-Wars-RPG/",
+	// 	"image": "./images/starwars.png",
+	// 	"description": "Star Wars is a game built in javascript utilizing jQuery.",
+	// 	"details": "",
+	// 	"tags": ["JavaScript", "jQuery", "Bootstrap", "HTML5"]
+	// }
 ]
