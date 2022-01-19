@@ -7,7 +7,7 @@
 		"image": "./images/divesheet.png",
 		"description": "A dive sheet generator for a 6 or 11 dive meet. Deployed Client in React with Next.js on Netlify.",
 		"details": "The Divesheet.com app that allows user to create a list of dives for a dive meet to save and print. It is a utility with a tour guide, and stepper functionality.",
-		"tags": ["React", "Next.js", "Netlify", "JavaScript", "TypeScript"]
+		"tags": ["React", "Next.js", "Netlify", "TypeScript"]
 	},
 	{
 		"title": "Cloud Copy 'n Paste",
